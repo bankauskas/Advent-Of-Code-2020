@@ -9,8 +9,6 @@ with open("input.txt") as f:
         letter = re.findall(r"\s(\w*)\:",line)[0]
         pasword = re.findall(r"\s(\w*)$",line)[0]
 
-        # if  len(pasword) < uperBound:
-        #     print('{} {} {} {}'.format(lowerBound, uperBound, letter, pasword))
         if  (pasword[lowerBound-1] == letter and pasword[uperBound-1] != letter) or (pasword[lowerBound-1] != letter and pasword[uperBound-1] == letter): 
             validPasswords.append((lowerBound, uperBound, letter, pasword))
 
