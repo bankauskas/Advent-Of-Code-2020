@@ -13,3 +13,5 @@ while row < len(lists):
 
 if __name__ == '__main__':
     print(trees)
+
+    
